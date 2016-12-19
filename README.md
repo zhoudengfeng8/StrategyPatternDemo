@@ -85,5 +85,3 @@ class ValidationManager {
 * 第二步：你要做的事情在不同情况下肯定会有不同具体实现，创造不同类来实现你的protocol。 - 策略的具体实现
 * 第三布：创建一个Manager来统一调配你的具体策略的实现。这个Manager会开放一个接口，满足你调用的最小充要条件。Manager会根据你的条件，决定具体使用什么策略。
 * 最后一步：在你需要的地方使用Manager来实现你要做的事情吧。
-
-### 具体代码：[StrategyPatternDemo](https://github.com/zhoudengfeng8/StrategyPatternDemo.git)
