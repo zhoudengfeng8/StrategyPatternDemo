@@ -20,14 +20,13 @@ class LoginViewController: UIViewController {
         let passValidation = validationManager.validationForText(text: passwordField.text, withValidationType: .Password)
         
         if emailValidation && passValidation {
+            // Log in successfully and enter main view
             performSegue(withIdentifier: "ShowMainView", sender: self)
         } else {
             // validation failed. You can do anything you want to alert user.
             let alert = UIAlertController(title: "Failed", message: "Email or password is not valid.", preferredStyle: .alert)
-            
             let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
             alert.addAction(cancelAction)
-            
             present(alert, animated: true, completion: nil)
         }
     }

@@ -11,15 +11,11 @@ import Foundation
 enum ValidationType: Int {
     case Email = 0
     case Password
-    case State
-    case Address
-    case PhoneNumber
-    case PostalCode
 }
 
 class ValidationManager {
     
-    var validators: [Validator] = [EmailValidator(), PasswordValidator()]
+    private lazy var validators: [Validator] = [EmailValidator(), PasswordValidator()]
     
     func validationForText(text: String?, withValidationType validationType: ValidationType) -> Bool {
         return validators[validationType.rawValue].isValid(text: text)
