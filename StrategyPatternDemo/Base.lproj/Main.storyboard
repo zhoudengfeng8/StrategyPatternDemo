@@ -22,6 +22,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StrategyPatternDemo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQC-70-7JD">
+                                <rect key="frame" x="91" y="162" width="192.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UvL-kH-Ths">
                                 <rect key="frame" x="67" y="244.5" width="240" height="89"/>
                                 <subviews>
@@ -84,7 +90,9 @@
                             <constraint firstItem="UvL-kH-Ths" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ClF-Vd-jkb"/>
                             <constraint firstItem="iYi-RT-5Wg" firstAttribute="trailing" secondItem="UvL-kH-Ths" secondAttribute="trailing" id="IsL-Yv-6TC"/>
                             <constraint firstItem="iYi-RT-5Wg" firstAttribute="top" secondItem="UvL-kH-Ths" secondAttribute="bottom" constant="20" id="Z2K-SL-ndx"/>
+                            <constraint firstItem="UvL-kH-Ths" firstAttribute="top" secondItem="HQC-70-7JD" secondAttribute="bottom" constant="58.5" id="df5-as-Ftp"/>
                             <constraint firstItem="UvL-kH-Ths" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="67" id="rd9-WZ-tzJ"/>
+                            <constraint firstItem="HQC-70-7JD" firstAttribute="centerX" secondItem="UvL-kH-Ths" secondAttribute="centerX" id="tuu-Lb-clp"/>
                         </constraints>
                     </view>
                     <connections>
